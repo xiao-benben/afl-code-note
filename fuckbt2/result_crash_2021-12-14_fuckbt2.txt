@@ -1,0 +1,1916 @@
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000520,sig:11,src:004754,op:havoc,rep:16
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852939
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852939
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] sameg coded in bitstream but no g defined !
+[0m[33m[LASeR] samepolyXXX coded in bitstream but no polyXXX defined !
+[0m[33m[LASeR] sameg coded in bitstream but no g defined !
+[0m[33m[LASeR] sametext coded in bitstream but no text defined !
+[0m[33m[LASeR] samepolyXXX coded in bitstream but no polyXXX defined !
+[0m[31m[LASeR] memory overread - corrupted decoding
+[0m[33m[MP4 Loading] decoding sample 1 from track ID 8 failed
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+__GI___libc_free (mem=0x1) at malloc.c:3102
+3102	malloc.c: No such file or directory.
+#0  __GI___libc_free (mem=0x1) at malloc.c:3102
+#1  0x00007ffff78c8ffd in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff78c917b in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff78e2b85 in gf_node_delete_attributes () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff78c8c3a in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#13 0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#14 0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#15 0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#16 0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#17 0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#18 0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#19 0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#20 0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#21 0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#22 0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#23 0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#24 0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#25 0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#26 0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#27 0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#28 0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#29 0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#30 0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#31 0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#32 0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#33 0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#34 0x00007ffff7850396 in gf_sg_command_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#35 0x00007ffff7a893b3 in gf_sm_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#36 0x0000555555584423 in dump_isom_scene ()
+#37 0x000055555557b42c in mp4boxMain ()
+#38 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#39 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000653,sig:06,src:005718+005529,op:splice,rep:2
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853099
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853099
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] samerect coded in bitstream but no rect defined !
+[0m[31m[LASeR] Undefined LASeR event 53
+[0m[31m[LASeR] Undefined LASeR event 63
+[0m[33m[LASeR] sameuse coded in bitstream but no use defined !
+[0m[33m[LASeR] samerect coded in bitstream but no rect defined !
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b5ed6b in lsr_read_rect () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5bc05 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b5d43d in lsr_read_a () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b5bf50 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b5cf26 in lsr_read_simpleLayout () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7b61735 in lsr_read_update_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7b59fc3 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#13 0x00005555555844a8 in dump_isom_scene ()
+#14 0x000055555557b42c in mp4boxMain ()
+#15 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#16 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000515,sig:11,src:004707,op:havoc,rep:4
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853098
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853098
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0mMP4 Loading: |====================| (100/100)                                                   Scene loaded - dumping 1 systems streams
+
+Program received signal SIGSEGV, Segmentation fault.
+__strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+65	../sysdeps/x86_64/multiarch/strlen-avx2.S: No such file or directory.
+#0  __strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+#1  0x00007ffff75de503 in __GI___strdup (s=0x0) at strdup.c:41
+#2  0x00007ffff78c3455 in gf_svg_dump_attribute () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7abb6a2 in gf_dump_svg_element () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7abc870 in gf_sm_dump_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7ac35fd in gf_sm_dump () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x0000555555584418 in dump_isom_scene ()
+#7  0x000055555557b42c in mp4boxMain ()
+#8  0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#9  0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000633,sig:11,src:005618,op:havoc,rep:2
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852606
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852606
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] sameg coded in bitstream but no g defined !
+[0m[33m[LASeR] samepolyXXX coded in bitstream but no polyXXX defined !
+[0m[33m[LASeR] sameline coded in bitstream but no line defined !
+[0m[33m[LASeR] sametext coded in bitstream but no text defined !
+[0m[33m[LASeR] samerect coded in bitstream but no rect defined !
+[0m[33m[LASeR] samepath coded in bitstream but no path defined !
+[0m[33m[LASeR] samerect coded in bitstream but no rect defined !
+[0mfree(): invalid pointer
+
+Program received signal SIGABRT, Aborted.
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:50
+50	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+#0  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:50
+#1  0x00007ffff7561859 in __GI_abort () at abort.c:79
+#2  0x00007ffff75cc3ee in __libc_message (action=action@entry=do_abort, fmt=fmt@entry=0x7ffff76f6285 "%s\n") at ../sysdeps/posix/libc_fatal.c:155
+#3  0x00007ffff75d447c in malloc_printerr (str=str@entry=0x7ffff76f44ae "free(): invalid pointer") at malloc.c:5347
+#4  0x00007ffff75d5cac in _int_free (av=<optimized out>, p=<optimized out>, have_lock=0) at malloc.c:4173
+#5  0x00007ffff7b51c85 in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b5d397 in lsr_read_a () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b5bf50 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7b5d74f in lsr_read_animate () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff7b5bf3d in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x00007ffff7b5eb5b in lsr_read_polygon () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#13 0x00007ffff7b5bc5a in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#14 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#15 0x00007ffff7b5e116 in lsr_read_g () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#16 0x00007ffff7b5bd35 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#17 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#18 0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#19 0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#20 0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#21 0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#22 0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#23 0x00005555555844a8 in dump_isom_scene ()
+#24 0x000055555557b42c in mp4boxMain ()
+#25 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#26 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000597,sig:11,src:005352,op:havoc,rep:2
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853010
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853010
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[31m[LASeR] Undefined LASeR event 34
+[0m[33m[LASeR] samerect coded in bitstream but no rect defined !
+[0m[31m[LASeR] memory overread - corrupted decoding
+[0m[33m[MP4 Loading] decoding sample 1 from track ID 8 failed
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+__GI___libc_free (mem=0x1) at malloc.c:3102
+3102	malloc.c: No such file or directory.
+#0  __GI___libc_free (mem=0x1) at malloc.c:3102
+#1  0x00007ffff78c8ffd in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff78c9130 in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff78e2b85 in gf_node_delete_attributes () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff78c8c3a in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#13 0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#14 0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#15 0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#16 0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#17 0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#18 0x00007ffff78503ff in gf_sg_command_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#19 0x00007ffff7a893b3 in gf_sm_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#20 0x0000555555584423 in dump_isom_scene ()
+#21 0x000055555557b42c in mp4boxMain ()
+#22 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#23 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000621,sig:11,src:005500,op:havoc,rep:32
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[32m[iso file] Unknown box type ti80s in parent rtp 
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852115
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32m[iso file] Unknown box type ti80s in parent rtp 
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852115
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] samepath coded in bitstream but no path defined !
+[0m[33m[MP4 Loading] decoding sample 1 from track ID 8 failed
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff78c8ff0 in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff78c8ff0 in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff78c9130 in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff78e2b85 in gf_node_delete_attributes () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff78c8c3a in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff78503ff in gf_sg_command_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff784b356 in gf_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#13 0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#14 0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#15 0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#16 0x00007ffff78503ff in gf_sg_command_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#17 0x00007ffff7a893b3 in gf_sm_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#18 0x0000555555584423 in dump_isom_scene ()
+#19 0x000055555557b42c in mp4boxMain ()
+#20 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#21 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000400,sig:11,src:004545,op:havoc,rep:16
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853118
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853118
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[MP4 Loading] decoding sample 1 from track ID 8 failed
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+__GI___libc_free (mem=0xc6b3cf0600000000) at malloc.c:3102
+3102	malloc.c: No such file or directory.
+#0  __GI___libc_free (mem=0xc6b3cf0600000000) at malloc.c:3102
+#1  0x00007ffff78c8ffd in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff78c917b in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff78e2b85 in gf_node_delete_attributes () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff78c8c3a in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#13 0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#14 0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#15 0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#16 0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#17 0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#18 0x00007ffff7850396 in gf_sg_command_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#19 0x00007ffff7a893b3 in gf_sm_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#20 0x0000555555584423 in dump_isom_scene ()
+#21 0x000055555557b42c in mp4boxMain ()
+#22 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#23 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000409,sig:11,src:004547,op:havoc,rep:8
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853069
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853069
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] samerect coded in bitstream but no rect defined !
+[0m[31m[LASeR] memory overread - corrupted decoding
+[0m[31m[LASeR] memory overread - corrupted decoding
+[0m[33m[MP4 Loading] decoding sample 1 from track ID 8 failed
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff78c8bb4 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff78c8bb4 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff785050f in gf_sg_command_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7a893b3 in gf_sm_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x0000555555584423 in dump_isom_scene ()
+#5  0x000055555557b42c in mp4boxMain ()
+#6  0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#7  0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000536,sig:11,src:004861,op:havoc,rep:2
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 835663
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 835663
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0mMP4 Loading: |====================| (100/100)                                                   Scene loaded - dumping 1 systems streams
+
+Program received signal SIGSEGV, Segmentation fault.
+__strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+65	../sysdeps/x86_64/multiarch/strlen-avx2.S: No such file or directory.
+#0  __strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+#1  0x00007ffff75de503 in __GI___strdup (s=0x0) at strdup.c:41
+#2  0x00007ffff78c3455 in gf_svg_dump_attribute () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7abb6a2 in gf_dump_svg_element () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7abc870 in gf_sm_dump_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7ac35fd in gf_sm_dump () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x0000555555584418 in dump_isom_scene ()
+#7  0x000055555557b42c in mp4boxMain ()
+#8  0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#9  0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000368,sig:11,src:004506,op:havoc,rep:16
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853093
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853093
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[MP4 Loading] decoding sample 1 from track ID 8 failed
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff78c8ff0 in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff78c8ff0 in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff78c9130 in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff78e2b85 in gf_node_delete_attributes () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff78c8c3a in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#13 0x00007ffff7850396 in gf_sg_command_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#14 0x00007ffff7a893b3 in gf_sm_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#15 0x0000555555584423 in dump_isom_scene ()
+#16 0x000055555557b42c in mp4boxMain ()
+#17 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#18 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000457,sig:11,src:004611,op:havoc,rep:2
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852093
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852093
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b5bb1c in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00005555555844a8 in dump_isom_scene ()
+#9  0x000055555557b42c in mp4boxMain ()
+#10 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#11 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000587,sig:11,src:005268,op:havoc,rep:4
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852733
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852733
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0mMP4 Loading: |====================| (100/100)                                                   Scene loaded - dumping 1 systems streams
+
+Program received signal SIGSEGV, Segmentation fault.
+__strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+65	../sysdeps/x86_64/multiarch/strlen-avx2.S: No such file or directory.
+#0  __strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+#1  0x00007ffff75de503 in __GI___strdup (s=0x0) at strdup.c:41
+#2  0x00007ffff78c3455 in gf_svg_dump_attribute () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7abb6a2 in gf_dump_svg_element () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7abc870 in gf_sm_dump_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7ac35fd in gf_sm_dump () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x0000555555584418 in dump_isom_scene ()
+#7  0x000055555557b42c in mp4boxMain ()
+#8  0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#9  0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000433,sig:11,src:004567,op:havoc,rep:16
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 845273
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 845273
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0mMP4 Loading: |====================| (100/100)                                                   Scene loaded - dumping 1 systems streams
+
+Program received signal SIGSEGV, Segmentation fault.
+__strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+65	../sysdeps/x86_64/multiarch/strlen-avx2.S: No such file or directory.
+#0  __strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+#1  0x00007ffff75de503 in __GI___strdup (s=0x0) at strdup.c:41
+#2  0x00007ffff78c3455 in gf_svg_dump_attribute () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7abb6a2 in gf_dump_svg_element () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7abc870 in gf_sm_dump_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7ac35fd in gf_sm_dump () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x0000555555584418 in dump_isom_scene ()
+#7  0x000055555557b42c in mp4boxMain ()
+#8  0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#9  0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000701,sig:11,src:006284,op:havoc,rep:16
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853069
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853069
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] samepolyXXX coded in bitstream but no polyXXX defined !
+[0m[31m[LASeR] memory overread - corrupted decoding
+[0m[33m[MP4 Loading] decoding sample 1 from track ID 8 failed
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff77ef509 in gf_list_count () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff77ef509 in gf_list_count () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff78c90b8 in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff78c9130 in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff78e2b85 in gf_node_delete_attributes () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff78c8c3a in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff7850396 in gf_sg_command_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff7a893b3 in gf_sm_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x0000555555584423 in dump_isom_scene ()
+#13 0x000055555557b42c in mp4boxMain ()
+#14 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#15 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000687,sig:11,src:006098,op:havoc,rep:4
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853084
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853084
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] sametext coded in bitstream but no text defined !
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b5bab4 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b601a4 in lsr_read_listener () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b5ba5b in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00005555555844a8 in dump_isom_scene ()
+#12 0x000055555557b42c in mp4boxMain ()
+#13 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#14 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000424,sig:11,src:004557,op:havoc,rep:4
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853047
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853047
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] samepolyXXX coded in bitstream but no polyXXX defined !
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b5eb22 in lsr_read_polygon () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5bc7a in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b5e3cd in lsr_read_image () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b5be50 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x00005555555844a8 in dump_isom_scene ()
+#13 0x000055555557b42c in mp4boxMain ()
+#14 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#15 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000667,sig:11,src:005818,op:havoc,rep:2
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type rtpFA in parent stsd
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852997
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type rtpFA in parent stsd
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852997
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[31m[LASeR] Undefined LASeR event 51
+[0m[31m[LASeR] Undefined LASeR event 51
+[0m[31m[LASeR] Undefined LASeR event 50
+[0mMP4 Loading: |====================| (100/100)                                                   Scene loaded - dumping 1 systems streams
+
+Program received signal SIGSEGV, Segmentation fault.
+__strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+65	../sysdeps/x86_64/multiarch/strlen-avx2.S: No such file or directory.
+#0  __strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+#1  0x00007ffff75de503 in __GI___strdup (s=0x0) at strdup.c:41
+#2  0x00007ffff78c3455 in gf_svg_dump_attribute () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7abb6a2 in gf_dump_svg_element () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7abc04b in DumpLSRAddReplaceInsert () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7abc31b in gf_sm_dump_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7ac35fd in gf_sm_dump () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x0000555555584418 in dump_isom_scene ()
+#8  0x000055555557b42c in mp4boxMain ()
+#9  0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#10 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000602,sig:11,src:005380,op:havoc,rep:8
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853075
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853075
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0mMP4 Loading: |====================| (100/100)                                                   Scene loaded - dumping 1 systems streams
+
+Program received signal SIGSEGV, Segmentation fault.
+__strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+65	../sysdeps/x86_64/multiarch/strlen-avx2.S: No such file or directory.
+#0  __strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+#1  0x00007ffff75de503 in __GI___strdup (s=0x0) at strdup.c:41
+#2  0x00007ffff78c3455 in gf_svg_dump_attribute () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7abb6a2 in gf_dump_svg_element () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7abc870 in gf_sm_dump_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7ac35fd in gf_sm_dump () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x0000555555584418 in dump_isom_scene ()
+#7  0x000055555557b42c in mp4boxMain ()
+#8  0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#9  0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000542,sig:11,src:004869,op:havoc,rep:4
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853079
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853079
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] samerect coded in bitstream but no rect defined !
+[0m[31m[LASeR] memory overread - corrupted decoding
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7b551a6 in lsr_read_anim_values_ex.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff7b551a6 in lsr_read_anim_values_ex.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b5d9e8 in lsr_read_animateTransform () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5beeb in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b5ede6 in lsr_read_rect () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b5bc05 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b61885 in lsr_read_update_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7b59fc3 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x00005555555844a8 in dump_isom_scene ()
+#13 0x000055555557b42c in mp4boxMain ()
+#14 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#15 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000420,sig:11,src:004556+004627,op:splice,rep:2
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853093
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853093
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] samepolyXXX coded in bitstream but no polyXXX defined !
+[0m[33m[LASeR] samerect coded in bitstream but no rect defined !
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff77ef566 in gf_list_last () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff77ef566 in gf_list_last () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b54ff5 in lsr_read_anim_values_ex.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5d9e8 in lsr_read_animateTransform () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b5beeb in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00005555555844a8 in dump_isom_scene ()
+#11 0x000055555557b42c in mp4boxMain ()
+#12 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#13 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000694,sig:11,src:006225,op:havoc,rep:4
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type .ump in parent hinf
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852985
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type .ump in parent hinf
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852985
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0mMP4 Loading: |====================| (100/100)                                                   Scene loaded - dumping 1 systems streams
+[33m[SVG] unknown attribute name for tag 65535
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff77ef509 in gf_list_count () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff77ef509 in gf_list_count () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff78c327c in gf_svg_dump_attribute () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff78c40de in gf_svg_dump_attribute () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7abb6a2 in gf_dump_svg_element () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7abb753 in gf_dump_svg_element () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7abc870 in gf_sm_dump_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7ac35fd in gf_sm_dump () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x0000555555584418 in dump_isom_scene ()
+#8  0x000055555557b42c in mp4boxMain ()
+#9  0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#10 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000681,sig:06,src:005943,op:havoc,rep:2
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type .ump in parent hinf
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853118
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type .ump in parent hinf
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853118
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b5dff6 in lsr_read_ellipse () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5be98 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b5d43d in lsr_read_a () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b5bf50 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x00005555555844a8 in dump_isom_scene ()
+#13 0x000055555557b42c in mp4boxMain ()
+#14 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#15 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000419,sig:11,src:004556+004627,op:splice,rep:8
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853098
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853098
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] samepath coded in bitstream but no path defined !
+[0m[33m[LASeR] sameline coded in bitstream but no line defined !
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff77ef566 in gf_list_last () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff77ef566 in gf_list_last () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b54ff5 in lsr_read_anim_values_ex.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5d9e8 in lsr_read_animateTransform () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b5beeb in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00005555555844a8 in dump_isom_scene ()
+#11 0x000055555557b42c in mp4boxMain ()
+#12 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#13 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000707,sig:11,src:006355,op:havoc,rep:8
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type .ump in parent hinf
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852520
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type .ump in parent hinf
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852520
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b5d573 in lsr_read_animate () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5bf20 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00005555555844a8 in dump_isom_scene ()
+#10 0x000055555557b42c in mp4boxMain ()
+#11 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#12 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000720,sig:11,src:005346+006329,op:splice,rep:4
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 851922
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 851922
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] samerect coded in bitstream but no rect defined !
+[0m[33m[LASeR] samerect coded in bitstream but no rect defined !
+[0m[33m[LASeR] sametext coded in bitstream but no text defined !
+[0mMP4 Loading: |====================| (100/100)                                                   Scene loaded - dumping 1 systems streams
+
+Program received signal SIGSEGV, Segmentation fault.
+__strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+65	../sysdeps/x86_64/multiarch/strlen-avx2.S: No such file or directory.
+#0  __strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+#1  0x00007ffff75de503 in __GI___strdup (s=0x0) at strdup.c:41
+#2  0x00007ffff78c3455 in gf_svg_dump_attribute () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7abb6a2 in gf_dump_svg_element () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7abc870 in gf_sm_dump_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7ac35fd in gf_sm_dump () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x0000555555584418 in dump_isom_scene ()
+#7  0x000055555557b42c in mp4boxMain ()
+#8  0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#9  0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000540,sig:11,src:004864,op:havoc,rep:8
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853069
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853069
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] sameline coded in bitstream but no line defined !
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b5dff6 in lsr_read_ellipse () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5be98 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b5cc26 in lsr_read_cursorManager () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b5ba38 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b5e631 in lsr_read_line () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7b5bd1d in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#13 0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#14 0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#15 0x00005555555844a8 in dump_isom_scene ()
+#16 0x000055555557b42c in mp4boxMain ()
+#17 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#18 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000439,sig:11,src:004575+004803,op:splice,rep:2
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853091
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853091
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[31m[LASeR] memory overread - corrupted decoding
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7b551a6 in lsr_read_anim_values_ex.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff7b551a6 in lsr_read_anim_values_ex.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b5d9e8 in lsr_read_animateTransform () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5beeb in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00005555555844a8 in dump_isom_scene ()
+#10 0x000055555557b42c in mp4boxMain ()
+#11 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#12 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000575,sig:11,src:005168+005466,op:splice,rep:4
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 851685
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 851685
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[31m[LASeR] Undefined LASeR event 61
+[0m[31m[LASeR] memory overread - corrupted decoding
+[0m[33m[MP4 Loading] decoding sample 1 from track ID 8 failed
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+__GI___libc_free (mem=0xd) at malloc.c:3102
+3102	malloc.c: No such file or directory.
+#0  __GI___libc_free (mem=0xd) at malloc.c:3102
+#1  0x00007ffff78c8ffd in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff78c9130 in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff78e2b85 in gf_node_delete_attributes () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff78c8c3a in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff7850396 in gf_sg_command_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff7a893b3 in gf_sm_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x0000555555584423 in dump_isom_scene ()
+#13 0x000055555557b42c in mp4boxMain ()
+#14 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#15 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000469,sig:11,src:004614,op:havoc,rep:4
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853119
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853119
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[31m[LASeR] memory overread - corrupted decoding
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7b551a6 in lsr_read_anim_values_ex.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff7b551a6 in lsr_read_anim_values_ex.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b5d9e8 in lsr_read_animateTransform () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5beeb in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00005555555844a8 in dump_isom_scene ()
+#10 0x000055555557b42c in mp4boxMain ()
+#11 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#12 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000639,sig:11,src:005671+005596,op:splice,rep:32
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852551
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852551
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] samerect coded in bitstream but no rect defined !
+[0mMP4 Loading: |====================| (100/100)                                                   Scene loaded - dumping 1 systems streams
+[33m[SVG Dumping] smil duration not assigned
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+__strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+65	../sysdeps/x86_64/multiarch/strlen-avx2.S: No such file or directory.
+#0  __strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+#1  0x00007ffff75de503 in __GI___strdup (s=0x0) at strdup.c:41
+#2  0x00007ffff78c3455 in gf_svg_dump_attribute () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7abb6a2 in gf_dump_svg_element () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7abb753 in gf_dump_svg_element () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7abc870 in gf_sm_dump_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7ac35fd in gf_sm_dump () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x0000555555584418 in dump_isom_scene ()
+#8  0x000055555557b42c in mp4boxMain ()
+#9  0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#10 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000533,sig:06,src:004856+005154,op:splice,rep:4
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 851845
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 851845
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] samepolyXXX coded in bitstream but no polyXXX defined !
+[0m[33m[LASeR] samepolyXXX coded in bitstream but no polyXXX defined !
+[0m[33m[LASeR] samepolyXXX coded in bitstream but no polyXXX defined !
+[0m[33m[LASeR] sameuse coded in bitstream but no use defined !
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b5ebc3 in lsr_read_polygon () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5bd7f in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b5f2bc in lsr_read_stop () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b5bb78 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b5f734 in lsr_read_use () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7b5bbbd in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff7b5eb5b in lsr_read_polygon () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff7b5bc7a in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#13 0x00007ffff7b5d140 in lsr_read_selector () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#14 0x00007ffff7b5b9f8 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#15 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#16 0x00007ffff7b5efd7 in lsr_read_script () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#17 0x00007ffff7b5bba0 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#18 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#19 0x00007ffff7b5eb5b in lsr_read_polygon () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#20 0x00007ffff7b5bc5a in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#21 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#22 0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#23 0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#24 0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#25 0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#26 0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#27 0x00005555555844a8 in dump_isom_scene ()
+#28 0x000055555557b42c in mp4boxMain ()
+#29 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#30 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000683,sig:06,src:006013,op:havoc,rep:8
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853093
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853093
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] samerect coded in bitstream but no rect defined !
+[0m[33m[LASeR] sameg coded in bitstream but no g defined !
+[0m[33m[LASeR] samepolyXXX coded in bitstream but no polyXXX defined !
+[0mfree(): invalid pointer
+
+Program received signal SIGABRT, Aborted.
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:50
+50	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+#0  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:50
+#1  0x00007ffff7561859 in __GI_abort () at abort.c:79
+#2  0x00007ffff75cc3ee in __libc_message (action=action@entry=do_abort, fmt=fmt@entry=0x7ffff76f6285 "%s\n") at ../sysdeps/posix/libc_fatal.c:155
+#3  0x00007ffff75d447c in malloc_printerr (str=str@entry=0x7ffff76f44ae "free(): invalid pointer") at malloc.c:5347
+#4  0x00007ffff75d5cac in _int_free (av=<optimized out>, p=<optimized out>, have_lock=0) at malloc.c:4173
+#5  0x00007ffff7b51c85 in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b5eb22 in lsr_read_polygon () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b5bc3a in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7b5e631 in lsr_read_line () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff7b5be3a in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#13 0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#14 0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#15 0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#16 0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#17 0x00005555555844a8 in dump_isom_scene ()
+#18 0x000055555557b42c in mp4boxMain ()
+#19 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#20 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000648,sig:11,src:005711+005239,op:splice,rep:4
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852022
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852022
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] samepolyXXX coded in bitstream but no polyXXX defined !
+[0m[31m[LASeR] memory overread - corrupted decoding
+[0m[33m[MP4 Loading] decoding sample 1 from track ID 8 failed
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff77ef509 in gf_list_count () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff77ef509 in gf_list_count () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff78c90b8 in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff78c9130 in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff78e2b85 in gf_node_delete_attributes () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff78c8c3a in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#13 0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#14 0x00007ffff7850396 in gf_sg_command_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#15 0x00007ffff7a893b3 in gf_sm_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#16 0x0000555555584423 in dump_isom_scene ()
+#17 0x000055555557b42c in mp4boxMain ()
+#18 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#19 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000669,sig:11,src:005818,op:havoc,rep:8
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type rtpFA in parent stsd
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852865
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type rtpFA in parent stsd
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852865
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b5d573 in lsr_read_animate () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5bf3d in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b5dfb8 in lsr_read_circle () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b61a68 in lsr_read_update_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b59fc3 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00005555555844a8 in dump_isom_scene ()
+#11 0x000055555557b42c in mp4boxMain ()
+#12 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#13 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000644,sig:11,src:005684,op:havoc,rep:8
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852927
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852927
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0mMP4 Loading: |====================| (100/100)                                                   Scene loaded - dumping 1 systems streams
+
+Program received signal SIGSEGV, Segmentation fault.
+__strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+65	../sysdeps/x86_64/multiarch/strlen-avx2.S: No such file or directory.
+#0  __strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+#1  0x00007ffff75de503 in __GI___strdup (s=0x0) at strdup.c:41
+#2  0x00007ffff78c3455 in gf_svg_dump_attribute () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7abb6a2 in gf_dump_svg_element () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7abc870 in gf_sm_dump_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7ac35fd in gf_sm_dump () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x0000555555584418 in dump_isom_scene ()
+#7  0x000055555557b42c in mp4boxMain ()
+#8  0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#9  0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000611,sig:11,src:005434,op:havoc,rep:8
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852734
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852734
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] samepath coded in bitstream but no path defined !
+[0mMP4 Loading: |====================| (100/100)                                                   Scene loaded - dumping 1 systems streams
+[33m[SVG Dumping] smil duration not assigned
+[0m[33m[SVG Dumping] field by of type UnknownType not supported
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff78c9200 in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff78c9200 in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff78c9130 in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff78e2b85 in gf_node_delete_attributes () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff78c8c3a in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7850396 in gf_sg_command_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff7a893b3 in gf_sm_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x0000555555584423 in dump_isom_scene ()
+#12 0x000055555557b42c in mp4boxMain ()
+#13 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#14 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000389,sig:11,src:004543,op:havoc,rep:4
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853090
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853090
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] samepolyXXX coded in bitstream but no polyXXX defined !
+[0m[31m[LASeR] Undefined LASeR event 59
+[0m[31m[LASeR] Undefined LASeR event 49
+[0m[31m[LASeR] Undefined LASeR event 54
+[0m[31m[LASeR] Undefined LASeR event 37
+[0m[31m[LASeR] memory overread - corrupted decoding
+[0m[33m[MP4 Loading] decoding sample 1 from track ID 8 failed
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+__GI___libc_free (mem=0xd8) at malloc.c:3102
+3102	malloc.c: No such file or directory.
+#0  __GI___libc_free (mem=0xd8) at malloc.c:3102
+#1  0x00007ffff78c8ffd in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff78c9130 in gf_svg_delete_attribute_value () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff78e2b85 in gf_node_delete_attributes () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff78c8c3a in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff784b6f4 in gf_node_unregister_children () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff784b731 in gf_sg_parent_reset () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff78c8c42 in gf_svg_node_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff784b51d in gf_node_unregister () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff785050f in gf_sg_command_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff7a893b3 in gf_sm_del () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x0000555555584423 in dump_isom_scene ()
+#13 0x000055555557b42c in mp4boxMain ()
+#14 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#15 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000407,sig:11,src:004547,op:havoc,rep:2
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853029
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853029
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] sametext coded in bitstream but no text defined !
+[0m[33m[LASeR] samepolyXXX coded in bitstream but no polyXXX defined !
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b5e746 in lsr_read_linearGradient () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5be28 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00005555555844a8 in dump_isom_scene ()
+#10 0x000055555557b42c in mp4boxMain ()
+#11 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#12 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000539,sig:11,src:004864,op:havoc,rep:8
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[32m[iso file] Unknown box type drzf in parent dinf
+[0m[31m[iso file] Missing dref box in dinf
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853029
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[32m[iso file] Unknown box type drzf in parent dinf
+[0m[31m[iso file] Missing dref box in dinf
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853029
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] sameg coded in bitstream but no g defined !
+[0m[33m[LASeR] samepath coded in bitstream but no path defined !
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b5dc9d in lsr_read_audio.isra () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5bed8 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00005555555844a8 in dump_isom_scene ()
+#10 0x000055555557b42c in mp4boxMain ()
+#11 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#12 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000631,sig:11,src:005586,op:havoc,rep:4
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 827356
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 827356
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0mMP4 Loading: |====================| (100/100)                                                   Scene loaded - dumping 1 systems streams
+
+Program received signal SIGSEGV, Segmentation fault.
+__strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+65	../sysdeps/x86_64/multiarch/strlen-avx2.S: No such file or directory.
+#0  __strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+#1  0x00007ffff75de503 in __GI___strdup (s=0x0) at strdup.c:41
+#2  0x00007ffff78c3455 in gf_svg_dump_attribute () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7abb6a2 in gf_dump_svg_element () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7abb753 in gf_dump_svg_element () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7abc870 in gf_sm_dump_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7ac35fd in gf_sm_dump () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x0000555555584418 in dump_isom_scene ()
+#8  0x000055555557b42c in mp4boxMain ()
+#9  0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#10 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000584,sig:06,src:005256,op:havoc,rep:2
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853069
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853069
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] sameg coded in bitstream but no g defined !
+[0m[33m[LASeR] samerect coded in bitstream but no rect defined !
+[0m[33m[LASeR] samepolyXXX coded in bitstream but no polyXXX defined !
+[0mfree(): invalid pointer
+
+Program received signal SIGABRT, Aborted.
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:50
+50	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+#0  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:50
+#1  0x00007ffff7561859 in __GI_abort () at abort.c:79
+#2  0x00007ffff75cc3ee in __libc_message (action=action@entry=do_abort, fmt=fmt@entry=0x7ffff76f6285 "%s\n") at ../sysdeps/posix/libc_fatal.c:155
+#3  0x00007ffff75d447c in malloc_printerr (str=str@entry=0x7ffff76f44ae "free(): invalid pointer") at malloc.c:5347
+#4  0x00007ffff75d5cac in _int_free (av=<optimized out>, p=<optimized out>, have_lock=0) at malloc.c:4173
+#5  0x00007ffff7b51c85 in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b5eb22 in lsr_read_polygon () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b5bc7a in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7b5e3cd in lsr_read_image () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff7b5be50 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x00007ffff7b5dae8 in lsr_read_animateTransform () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#13 0x00007ffff7b5beeb in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#14 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#15 0x00007ffff7b5ede6 in lsr_read_rect () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#16 0x00007ffff7b5bc1d in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#17 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#18 0x00007ffff7b5d140 in lsr_read_selector () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#19 0x00007ffff7b5b9f8 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#20 0x00007ffff7b5c0e2 in lsr_read_group_content_post_init.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#21 0x00007ffff7b5cb26 in lsr_read_set () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#22 0x00007ffff7b5bb8b in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#23 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#24 0x00007ffff7b601a4 in lsr_read_listener () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#25 0x00007ffff7b5ba5b in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#26 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#27 0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#28 0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#29 0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#30 0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#31 0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#32 0x00005555555844a8 in dump_isom_scene ()
+#33 0x000055555557b42c in mp4boxMain ()
+#34 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#35 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000623,sig:11,src:005500+003857,op:splice,rep:2
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[32m[iso file] Unknown box type ti80s in parent rtp 
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852029
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32m[iso file] Unknown box type ti80s in parent rtp 
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852029
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b5d573 in lsr_read_animate () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b61ac0 in lsr_read_update_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b59fc3 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b5b7d4 in lsr_read_conditional () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b61745 in lsr_read_update_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b590d9 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00005555555844a8 in dump_isom_scene ()
+#11 0x000055555557b42c in mp4boxMain ()
+#12 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#13 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000711,sig:11,src:006404+006291,op:splice,rep:2
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852951
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852951
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0mMP4 Loading: |====================| (100/100)                                                   Scene loaded - dumping 1 systems streams
+
+Program received signal SIGSEGV, Segmentation fault.
+__strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+65	../sysdeps/x86_64/multiarch/strlen-avx2.S: No such file or directory.
+#0  __strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:65
+#1  0x00007ffff75de503 in __GI___strdup (s=0x0) at strdup.c:41
+#2  0x00007ffff78c3455 in gf_svg_dump_attribute () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7abb6a2 in gf_dump_svg_element () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7abc870 in gf_sm_dump_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7ac35fd in gf_sm_dump () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x0000555555584418 in dump_isom_scene ()
+#7  0x000055555557b42c in mp4boxMain ()
+#8  0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#9  0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000475,sig:11,src:004639,op:havoc,rep:8
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853114
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853114
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7b551a6 in lsr_read_anim_values_ex.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff7b551a6 in lsr_read_anim_values_ex.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b5d9e8 in lsr_read_animateTransform () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b61a8b in lsr_read_update_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b59634 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00005555555844a8 in dump_isom_scene ()
+#8  0x000055555557b42c in mp4boxMain ()
+#9  0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#10 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000661,sig:11,src:005751,op:havoc,rep:4
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852987
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 852987
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] sameg coded in bitstream but no g defined !
+[0m[33m[LASeR] samepolyXXX coded in bitstream but no polyXXX defined !
+[0m[33m[LASeR] sameuse coded in bitstream but no use defined !
+[0m[33m[LASeR] sametext coded in bitstream but no text defined !
+[0m[33m[LASeR] samepolyXXX coded in bitstream but no polyXXX defined !
+[0m[33m[LASeR] samerect coded in bitstream but no rect defined !
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff7b51b5a in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b5d397 in lsr_read_a () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5bf50 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b5e3cd in lsr_read_image () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b5be50 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b5dded in lsr_read_audio.isra () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7b5bed8 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff7b5dfb8 in lsr_read_circle () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff7b5bec8 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#13 0x00007ffff7b5ecf7 in lsr_read_radialGradient () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#14 0x00007ffff7b5bd60 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#15 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#16 0x00007ffff7b5f734 in lsr_read_use () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#17 0x00007ffff7b5bbbd in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#18 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#19 0x00007ffff7b5eb5b in lsr_read_polygon () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#20 0x00007ffff7b5bc5a in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#21 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#22 0x00007ffff7b5e116 in lsr_read_g () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#23 0x00007ffff7b5bd35 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#24 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#25 0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#26 0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#27 0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#28 0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#29 0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#30 0x00005555555844a8 in dump_isom_scene ()
+#31 0x000055555557b42c in mp4boxMain ()
+#32 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#33 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000579,sig:11,src:005198,op:havoc,rep:4
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853064
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853064
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff77ef566 in gf_list_last () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#0  0x00007ffff77ef566 in gf_list_last () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#1  0x00007ffff7b54ff5 in lsr_read_anim_values_ex.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#2  0x00007ffff7b5d9e8 in lsr_read_animateTransform () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#3  0x00007ffff7b5beeb in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#4  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#5  0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00005555555844a8 in dump_isom_scene ()
+#11 0x000055555557b42c in mp4boxMain ()
+#12 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#13 0x000055555556c45e in _start ()
+
+#######################################################################
+file: /root/fuckit/gpac1210/bin/gcc/fuzz_box/out-bt/crashes/id:000415,sig:11,src:004550,op:havoc,rep:8
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 198 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type rtpFA in parent stsd
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853090
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type rtpFA in parent stsd
+[0m[33m[iso file] extra box maxr found in hinf, deleting
+[0m[32m[iso file] Unknown box type 80rak in parent moov
+[0m[31m[iso file] Incomplete box mdat - start 11495 size 853090
+[0m[31m[iso file] Incomplete file while reading for dump - aborting parsing
+[0m[32mMPEG-4 LASeR Scene Parsing
+[0m[33m[LASeR] sametext coded in bitstream but no text defined !
+[0m[33m[LASeR] sametext coded in bitstream but no text defined !
+[0mfree(): invalid pointer
+
+Program received signal SIGABRT, Aborted.
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:50
+50	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+#0  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:50
+#1  0x00007ffff7561859 in __GI_abort () at abort.c:79
+#2  0x00007ffff75cc3ee in __libc_message (action=action@entry=do_abort, fmt=fmt@entry=0x7ffff76f6285 "%s\n") at ../sysdeps/posix/libc_fatal.c:155
+#3  0x00007ffff75d447c in malloc_printerr (str=str@entry=0x7ffff76f44ae "free(): invalid pointer") at malloc.c:5347
+#4  0x00007ffff75d5cac in _int_free (av=<optimized out>, p=<optimized out>, have_lock=0) at malloc.c:4173
+#5  0x00007ffff7b51c85 in lsr_read_id () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#6  0x00007ffff7b5d397 in lsr_read_a () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#7  0x00007ffff7b5bf50 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#8  0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#9  0x00007ffff7b5e7ee in lsr_read_linearGradient () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#10 0x00007ffff7b5be28 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#11 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#12 0x00007ffff7b5cf26 in lsr_read_simpleLayout () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#13 0x00007ffff7b5b980 in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#14 0x00007ffff7b5c0e2 in lsr_read_group_content_post_init.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#15 0x00007ffff7b5d79e in lsr_read_animate () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#16 0x00007ffff7b5bf3d in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#17 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#18 0x00007ffff7b5f50d in lsr_read_text () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#19 0x00007ffff7b5bbed in lsr_read_scene_content_model () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#20 0x00007ffff7b5c89c in lsr_read_group_content.part () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#21 0x00007ffff7b60a76 in lsr_read_svg () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#22 0x00007ffff7b58817 in lsr_read_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#23 0x00007ffff7b5ab74 in lsr_decode_laser_unit () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#24 0x00007ffff7b6239d in gf_laser_decode_command_list () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#25 0x00007ffff7aa3061 in gf_sm_load_run_isom () from /root/fuck_bin/gpac/test/lib/libgpac.so.10
+#26 0x00005555555844a8 in dump_isom_scene ()
+#27 0x000055555557b42c in mp4boxMain ()
+#28 0x00007ffff75630b3 in __libc_start_main (main=0x55555556c420 <main>, argc=3, argv=0x7fffffffe1d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe1c8) at ../csu/libc-start.c:308
+#29 0x000055555556c45e in _start ()
